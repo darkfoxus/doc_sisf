@@ -19,12 +19,16 @@
 
     <section class="main-content">
       <h3>
-<a class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modulos api</h3>
-
+<a class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Login</h3>
+<p>Permite el inicio de sesion de un usuario</p>
+<p><b>Metodo:</b> POST</p>
+<p><b>Recibe:</b> {user, password}</p>
+<p><b>Responde:</b><br>
 <ul>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/auth/login.html">login</a></li>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/auth/logout.html">logout</li>
+  <li>{mensaje : mensaje} donde mensaje es un mensaje de error</li>
+  <li>{token: token, usuario: usuario, persona: persona}</li>
 </ul>
+</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Blesfia/sisf">Sisf</a> is maintained by <a href="https://github.com/Blesfia">Blesfia</a>.</span>
