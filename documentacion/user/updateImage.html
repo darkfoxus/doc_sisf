@@ -11,23 +11,24 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">API | USER</h1>
-      <h2 class="project-tagline">API para el manejo de usuarios.</h2>
+      <h1 class="project-name">USER | UPDATEIMAGE</h1>
+      <h2 class="project-tagline">Permite modificar el avatar del usuario</h2>
       <a href="https://blesfia.github.io/doc_sisf/documentacion/index.html" class="btn">Ver API</a>
       <a href="https://github.com/Blesfia/sisf" class="btn">Ver en GitHub</a>
     </section>
 
     <section class="main-content">
       <h3>
-<a class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modulo User</h3>
-
+<a class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Update image of a User</h3>
+<p><b>Url:</b> http://sisf.herokuapp.com/user/updateImage</p>
+<p><b>Metodo:</b> POST</p>
+<p><b>Recibe: FORMULARIO HTML con inputs: {token, file} | Donde file es el archivo.</b></p>
+<p><b>Responde:</b><br>
 <ul>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/user/listar.html">list</a></li>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/user/get.html">get</a></li>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/user/update.html">update</a></li>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/user/updateImage.html">updateImage</a></li>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/user/insert.html">insert</a></li>
+  <li>HTTP 200 | Si el user fue editado</li>
+  <li>HTTP 405 | Error</li>
 </ul>
+</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Blesfia/sisf">Sisf</a> is maintained by <a href="https://github.com/Blesfia">Blesfia</a>.</span>
