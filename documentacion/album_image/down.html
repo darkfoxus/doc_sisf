@@ -11,24 +11,25 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">API | ALBUM</h1>
-      <h2 class="project-tagline">API para el manejo de albums.</h2>
+      <h1 class="project-name">ALBUMXIMAGE | DOWN</h1>
+      <h2 class="project-tagline">Permite que el orden de una imagen en un album sea mayor</h2>
       <a href="https://blesfia.github.io/doc_sisf/documentacion/index.html" class="btn">Ver API</a>
       <a href="https://github.com/Blesfia/sisf" class="btn">Ver en GitHub</a>
     </section>
 
     <section class="main-content">
       <h3>
-<a class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modulo Album</h3>
-
+<a class="anchor" href="#" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>down AlbumXImage</h3>
+<p><b>Url:</b> http://sisf.herokuapp.com/album_image/down</p>
+<p><b>Metodo:</b> POST</p>
+<p><b>Recibe:</b> {id, token}</p>
+<p><b>Responde:</b><br>
 <ul>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/album/listar.html">list</a></li>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/album/get.html">get</a></li>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/album/images.html">images</a></li>
-  <li>delete</li>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/album/update.html">update</a></li>
-  <li><a href="https://blesfia.github.io/doc_sisf/documentacion/album/insert.html">insert</a></li>
+  <li>HTTP 200 | Si el orden de la imagen fue actualizado</li>
+  <li>HTTP 405 | Error</li>
+  <li>HTTP 403 | Permisos insuficientes</li>
 </ul>
+</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Blesfia/sisf">Sisf</a> is maintained by <a href="https://github.com/Blesfia">Blesfia</a>.</span>
